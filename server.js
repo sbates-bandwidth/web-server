@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/about', middleware.requireAuthentication, function(req, res) {
-    res.send('About us');
+    res.send('About us!');
 });
 
 app.use(express.static(__dirname + '/public'));
